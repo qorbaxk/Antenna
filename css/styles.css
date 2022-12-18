@@ -1,0 +1,58 @@
+@import url(./normalize.css);
+@import url(./sr-only.css);
+@import url(./theme.css);
+@import url(./base.css);
+@import url(./fontello.css);
+
+body{
+  padding: 40px 100px;
+}
+.header{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.logo-img{
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+}
+.main-menu{
+  font-size: var(--text-base);
+  color: var(--secondary-color);
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  padding-left: var(--spacing-lg);
+}
+.menu-list{
+  margin-right: var(--spacing-sm);
+  padding: var(--spacing-xs);
+}
+.menu-list:hover, .menu-list:focus{
+  color: var(--light-gray);
+}
+.main-social-media{
+  display: flex;
+  flex-shrink: 0;
+}
+.main-social-media li{
+  padding: var(--spacing-xs);
+}
+
+/* 데스크탑 제외 990px 이하 디바이스 크기를 가진 기기 */
+@media (max-width:990px){
+  .header{
+    justify-content: center;
+  }
+  .logo{
+    width: 30%;
+    height: auto;
+  }
+  .main-menu{
+    display: none;
+  }
+  .main-social-media{
+    display: none;
+  }
+}
