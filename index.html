@@ -1,32 +1,198 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antenna</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-<body>
-  <header class="header">
-    <a href="/" class="logo_link">
-      <h1 class="sr-only">안테나</h1>
-      <img src="./img/logo.png" alt="안테나 로고" class="logo_img" width="60"/>
-    </a>
-   
-    <ul class="main-menu">
-      <li class="menu-list"><a href="/" class="menu_link">HOME</a></li>
-      <li class="menu-list"><a href="/" class="menu_link">ABOUT</a></li>
-      <li class="menu-list"><a href="/" class="menu_link">ARTIST</a></li>
-      <li class="menu-list"><a href="/" class="menu_link">SCHEDULE</a></li>
-      <li class="menu-list"><a href="/" class="menu_link">CONTACT</a></li>  
-    </ul>
-    <ul class="main-social-media">
-      <li class="icon-instagram"><a href=""></a></li>
-      <li class="icon-youtube-play"><a href=""></a></li>
-      <li class="icon-twitter"><a href=""></a></li>
-      <li class="icon-facebook"><a href=""></a></li>
-    </ul>
-  </header>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antenna</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header class="header">
+      <!-- 로고 -->
+      <a href="/" class="logo-link">
+        <h1 class="sr-only">안테나</h1>
+        <img
+          src="./img/logo.png"
+          alt="안테나 로고"
+          class="logo-img"
+          width="60"
+        />
+      </a>
+      <!-- 네비게이션 -->
+      <ul class="navigation">
+        <li class="nav-list is-active">
+          <a href="/" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-list"><a href="/" class="nav-link">ABOUT</a></li>
+        <li class="nav-list"><a href="/" class="nav-link">ARTIST</a></li>
+        <li class="nav-list"><a href="/" class="nav-link">SCHEDULE</a></li>
+        <li class="nav-list"><a href="/" class="nav-link">CONTACT</a></li>
+      </ul>
+      <!-- 소셜미디어 링크 -->
+      <ul class="social-media">
+        <li>
+          <a
+            class="icons icon-instagram"
+            href="https://www.instagram.com/antenna_official/"
+            target="_blank"
+            aria-label="안테나 인스타그램"
+            role="link"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="icons icon-youtube-play"
+            href="https://www.youtube.com/channel/UCwW6D9G9hegNPKYrQ0zivvQ"
+            target="_blank"
+            aria-label="안테나 유튜브 채널"
+            role="link"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="icons icon-twitter"
+            href="https://twitter.com/antennamusic"
+            target="_blank"
+            aria-label="안테나 트위터"
+            role="link"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="icons icon-facebook"
+            href="https://www.facebook.com/antennamusics"
+            target="_blank"
+            aria-label="안테나 페이스북"
+            role="link"
+          ></a>
+        </li>
+      </ul>
+    </header>
+    <!-- 메인 영역 -->
+    <main class="main">
+      <!-- 새 영상섹션 -->
+      <section class="news">
+        <h2 class="news-title titles sr-only">Antenna News</h2>
+        <figure class="news-videoContainer">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/APYhSUUdayQ?autoplay=1&mute=1&controls=0&loop=1"
+            title="권진아 진심이었던 사람만 바보가 돼 뮤직 비디오"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </section>
+      <!-- 피드섹션 -->
+      <section class="feed">
+        <h2 class="feed-title titles">Antenna Feed</h2>
+        <div class="feed-grid">
+          <figure class="feed-cover">
+            <img
+              src="./img/tub10.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub9.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub8.png"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub7.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub6.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub5.png"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub4.png"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub3.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub2.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+          <figure class="feed-cover">
+            <img
+              src="./img/tub1.jpg"
+              alt="다음 겨울에도 여기서 만나 앨범 커버"
+              class="feed-img"
+            />
+            <figcaption class="sr-only">
+              다음 겨울에도 여기서 만나 앨범 커버
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

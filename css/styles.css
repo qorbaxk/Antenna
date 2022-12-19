@@ -4,44 +4,118 @@
 @import url(./base.css);
 @import url(./fontello.css);
 
-body{
-  padding: 40px 100px;
-}
+/* 헤더 */
 .header{
+  max-width: var(--container-width);
+  margin:var(--spacing-xl) auto;
+  padding: var(--spacing-base) var(--spacing-lg);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
+/* 로고 */
+.logo-link{
+  padding: var(--spacing-xs);
+}
 .logo-img{
-  width: 50%;
-  height: auto;
   flex-shrink: 0;
 }
-.main-menu{
+/* 네비게이션 */
+.navigation{
   font-size: var(--text-base);
   color: var(--secondary-color);
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
+  flex-shrink: 0;
   padding-left: var(--spacing-lg);
 }
-.menu-list{
+.nav-list{
   margin-right: var(--spacing-sm);
-  padding: var(--spacing-xs);
 }
-.menu-list:hover, .menu-list:focus{
+.nav-list:hover, .nav-list:focus{
   color: var(--light-gray);
 }
-.main-social-media{
+.is-active{
+  color: var(--primary-color);
+}
+.nav-link{
+  padding: var(--spacing-xs);
+  display: block;
+}
+.social-media{
   display: flex;
   flex-shrink: 0;
 }
-.main-social-media li{
+.social-media li{
+  margin: 0 var(--spacing-xxs);
+}
+.icons{
   padding: var(--spacing-xs);
+  display: block;
+  font-size: var(--text-lg);
+  color: var(--secondary-color);
 }
 
-/* 데스크탑 제외 990px 이하 디바이스 크기를 가진 기기 */
-@media (max-width:990px){
+/* 메인콘텐츠 */
+.main{
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing-base) var(--spacing-lg);
+}
+.titles{
+  font-family: 'gilroy', 'Spoqa Han Sans';
+  font-size: var(--text-xxl);
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-xl);
+}
+.titles::after{
+  content: "";
+  background-color: var(--primary-color);
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  margin-left: 5px;
+}
+/* 새 영상 */
+.news-videoContainer{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56%;
+}
+.news-videoContainer iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* 안테나 피드 */
+.feed-grid{
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(5,1fr);
+  gap: 1px;
+}
+.feed-cover{
+  /* width: 200px;
+  height: 200px; */
+}
+.feed-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+  
+}
+
+/* 태블릿 */
+@media (max-width:768px){
   .header{
     justify-content: center;
   }
@@ -49,10 +123,19 @@ body{
     width: 30%;
     height: auto;
   }
-  .main-menu{
+  .navigation{
     display: none;
   }
-  .main-social-media{
+  .social-media{
     display: none;
+  }
+  .feed-grid{
+    grid-template: repeat(2,1fr) / repeat(4,1fr);
+  }
+}
+/* 모바일 */
+@media (max-width:425px){
+  .feed-grid{
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
   }
 }
