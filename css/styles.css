@@ -71,6 +71,9 @@
   margin-right: auto;
   padding: var(--spacing-base) var(--spacing-lg);
 }
+.sections {
+  padding: var(--spacing-uxl) 0;
+}
 .titles {
   font-family: "gilroy";
   font-size: var(--text-xxl);
@@ -88,6 +91,9 @@
   margin-left: 5px;
 }
 /* 새 영상 */
+.news {
+  padding: 0;
+}
 .news-videoContainer {
   position: relative;
   width: 100%;
@@ -104,7 +110,6 @@
 /* 안테나 소개 */
 .intro {
   margin-bottom: var(--spacing-uxl);
-  padding: var(--spacing-uxl) 0;
 }
 .intro-title {
   margin-bottom: var(--spacing-md);
@@ -114,26 +119,27 @@
   font-weight: 600;
   opacity: 0.4;
   letter-spacing: -0.125rem;
+  padding: var(--spacing-base) 0;
 }
 .intro-explain {
   margin-bottom: var(--spacing-uxl);
 }
-.intro-btn {
+/* 링크 버튼 스타일 */
+.btns {
   width: 260px;
   border: 1px solid rgba(54, 54, 54, 0.2);
   color: rgba(54, 54, 54, 0.85);
   position: relative;
   transition: background-color, 300ms;
 }
-.intro-link {
+.btns a {
   display: block;
   padding: var(--spacing-md);
   font-weight: 700;
   font-size: var(--text-sm);
   letter-spacing: -0.125rem;
-  z-index: 10;
 }
-.intro-btn::after {
+.btns::after {
   content: "\e800";
   font-family: "fontello";
   font-size: var(--text-sm);
@@ -143,8 +149,8 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-.intro-btn:hover,
-.intro-btn:focus {
+.btns:hover,
+.btns:focus {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
@@ -153,13 +159,14 @@
 .feed-grid {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(5, 1fr);
-  gap: 1px;
+  gap: var(--spacing-xxs);
 }
 .feed-cover {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 .feed-img {
   position: absolute;
@@ -168,6 +175,62 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.feed-cover:hover {
+  opacity: 0.8;
+}
+/* 아티스트 */
+.artist-title {
+  margin-bottom: 0;
+}
+.artist-explain {
+  margin-bottom: var(--spacing-uxl);
+}
+.artist-grid {
+  margin: var(--spacing-uxl) 0;
+  display: grid;
+  grid-template: auto / repeat(4, 1fr);
+  gap: var(--spacing-s);
+}
+.artist-cover {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.artist-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.artist-fig {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 5px 5px 30px var(--primary-color);
+  white-space: nowrap;
+  transition: opacity, 500ms;
+  opacity: 0;
+}
+.artist-fig p {
+  color: var(--white);
+  font-weight: 700;
+}
+.ko-name {
+  font-size: var(--text-xl);
+}
+.en-name {
+  font-size: var(--text-xs);
+}
+.artist-cover:hover .artist-fig {
+  opacity: 1;
 }
 
 /* 태블릿 */
