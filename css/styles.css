@@ -155,11 +155,19 @@
   grid-template: repeat(2, 1fr) / repeat(5, 1fr);
   gap: 1px;
 }
+.feed-cover {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
 .feed-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin: auto;
 }
 
 /* 태블릿 */
