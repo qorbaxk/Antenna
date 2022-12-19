@@ -4,74 +4,80 @@
 @import url(./base.css);
 @import url(./fontello.css);
 
+* {
+  color: var(--secondary-color);
+}
 /* 헤더 */
-.header{
+.header {
   max-width: var(--container-width);
-  margin:var(--spacing-xl) auto;
+  margin: var(--spacing-xl) auto;
   padding: var(--spacing-base) var(--spacing-lg);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 }
 /* 로고 */
-.logo-link{
+.logo-link {
   padding: var(--spacing-xs);
 }
-.logo-img{
+.logo-img {
   flex-shrink: 0;
 }
 /* 네비게이션 */
-.navigation{
+.navigation {
+  font-family: "gilroy";
   font-size: var(--text-base);
-  color: var(--secondary-color);
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
   flex-shrink: 0;
   padding-left: var(--spacing-lg);
 }
-.nav-list{
+.nav-list {
   margin-right: var(--spacing-sm);
+  transition: opacity, 300ms;
 }
-.nav-list:hover, .nav-list:focus{
-  color: var(--light-gray);
-}
-.is-active{
-  color: var(--primary-color);
-}
-.nav-link{
+.nav-link {
   padding: var(--spacing-xs);
   display: block;
 }
-.social-media{
+.social-media {
   display: flex;
   flex-shrink: 0;
 }
-.social-media li{
+.social-media li {
   margin: 0 var(--spacing-xxs);
 }
-.icons{
+.icons {
   padding: var(--spacing-xs);
   display: block;
   font-size: var(--text-lg);
-  color: var(--secondary-color);
+  transition: opacity, 300ms;
+}
+.nav-list:hover,
+.nav-list:focus,
+.icons:hover,
+.icons:focus {
+  opacity: 0.4;
+}
+.is-active {
+  color: var(--primary-color);
 }
 
 /* 메인콘텐츠 */
-.main{
+.main {
   max-width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
   padding: var(--spacing-base) var(--spacing-lg);
 }
-.titles{
-  font-family: 'gilroy', 'Spoqa Han Sans';
+.titles {
+  font-family: "gilroy";
   font-size: var(--text-xxl);
   font-weight: 700;
-  color: var(--secondary-color);
-  margin-bottom: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
 }
-.titles::after{
+.titles::after {
   content: "";
   background-color: var(--primary-color);
   display: inline-block;
@@ -82,60 +88,102 @@
   margin-left: 5px;
 }
 /* 새 영상 */
-.news-videoContainer{
+.news-videoContainer {
   position: relative;
   width: 100%;
   height: 0;
   padding-top: 56%;
 }
-.news-videoContainer iframe{
+.news-videoContainer iframe {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
+/* 안테나 소개 */
+.intro {
+  margin-bottom: var(--spacing-uxl);
+  padding: var(--spacing-uxl) 0;
+}
+.intro-title {
+  margin-bottom: var(--spacing-md);
+}
+.explains {
+  font-family: "Spoqa Han Sans";
+  font-weight: 600;
+  opacity: 0.4;
+  letter-spacing: -0.125rem;
+}
+.intro-explain {
+  margin-bottom: var(--spacing-uxl);
+}
+.intro-btn {
+  width: 260px;
+  border: 1px solid rgba(54, 54, 54, 0.2);
+  color: rgba(54, 54, 54, 0.85);
+  position: relative;
+  transition: background-color, 300ms;
+}
+.intro-link {
+  display: block;
+  padding: var(--spacing-md);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  letter-spacing: -0.125rem;
+  z-index: 10;
+}
+.intro-btn::after {
+  content: "\e800";
+  font-family: "fontello";
+  font-size: var(--text-sm);
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.intro-btn:hover,
+.intro-btn:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
 
 /* 안테나 피드 */
-.feed-grid{
+.feed-grid {
   display: grid;
-  grid-template: repeat(2,1fr) / repeat(5,1fr);
+  grid-template: repeat(2, 1fr) / repeat(5, 1fr);
   gap: 1px;
 }
-.feed-cover{
-  /* width: 200px;
-  height: 200px; */
-}
-.feed-img{
+.feed-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin: auto;
-  
 }
 
 /* 태블릿 */
-@media (max-width:768px){
-  .header{
+@media (max-width: 768px) {
+  .header {
     justify-content: center;
   }
-  .logo{
+  .logo {
     width: 30%;
     height: auto;
   }
-  .navigation{
+  .navigation {
     display: none;
   }
-  .social-media{
+  .social-media {
     display: none;
   }
-  .feed-grid{
-    grid-template: repeat(2,1fr) / repeat(4,1fr);
+  .feed-grid {
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
   }
 }
 /* 모바일 */
-@media (max-width:425px){
-  .feed-grid{
-    grid-template: repeat(3,1fr) / repeat(3,1fr);
+@media (max-width: 425px) {
+  .feed-grid {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   }
 }
