@@ -115,7 +115,6 @@
   margin-bottom: var(--spacing-md);
 }
 .explains {
-  font-family: "Spoqa Han Sans";
   font-weight: 600;
   opacity: 0.4;
   letter-spacing: -0.125rem;
@@ -129,8 +128,6 @@
   color: rgba(54, 54, 54, 0.85);
   position: relative;
   transition: background-color, 300ms;
-}
-.btns a {
   display: block;
   padding: var(--spacing-md);
   font-weight: 700;
@@ -232,7 +229,8 @@
 .en-name {
   font-size: var(--text-xs);
 }
-.artist-cover:hover .artist-fig, .artist-cover:focus .artist-fig {
+.artist-cover:hover .artist-fig,
+.artist-cover:focus .artist-fig {
   opacity: 1;
 }
 
@@ -245,6 +243,57 @@
   100% {
     transform: translateX(calc(-300px * 12));
   }
+}
+
+/* 푸터 */
+.footer {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing-base) var(--spacing-lg);
+  background: url(../img/footer-logo.png) no-repeat 30px 30px / 15%;
+  position: relative;
+}
+.footer-inner {
+  padding: 0 300px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.en-ad {
+  font-family: "gilroy";
+  display: block;
+  padding-bottom: var(--spacing-xs);
+  margin-left: var(--spacing-xs);
+}
+.ko-ad {
+  font-size: var(--text-sm);
+}
+.footer-btn {
+  font-weight: 600;
+  margin-top: var(--spacing-xl);
+  margin-left: var(--spacing-xs);
+}
+.btt {
+  position: absolute;
+  top: var(--spacing-base);
+  right: var(--spacing-base);
+  font-family: "gilroy";
+  font-weight: 500;
+  font-size: var(--text-md);
+  opacity: 0.7;
+  cursor: pointer;
+}
+.btt::after {
+  content: "\e801";
+  font-family: "fontello";
+  margin-left: var(--spacing-xs);
+}
+.copyright {
+  display: block;
+  font-family: "gilroy";
+  padding: var(--spacing-xl) 0;
+  margin-top: var(--spacing-uxl);
+  border-top: 1px solid var(--gray);
 }
 
 /* 태블릿 */

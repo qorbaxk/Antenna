@@ -1,8 +1,9 @@
 :root {
   --white: #fff;
   --black: #212121;
-  --bright-yellow: #FDE700;
+  --bright-yellow: #fde700;
   --gray-black: #363636;
+  --gray: #d5d5d5;
 
   --primary-color: var(--bright-yellow);
   --secondary-color: var(--gray-black);
@@ -26,5 +27,4 @@
   --text-xxl: 2rem; /* 32px*/
 
   --container-width: 87.5rem; /* 1400px */
-  
 }
