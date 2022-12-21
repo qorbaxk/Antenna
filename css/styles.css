@@ -97,7 +97,7 @@
 .news-videoContainer {
   position: relative;
   width: 100%;
-  height: 0;
+  height: 0 !important;
   padding-top: 56%;
 }
 .news-videoContainer iframe {
@@ -120,8 +120,6 @@
   opacity: 0.4;
   letter-spacing: -0.125rem;
   padding: var(--spacing-base) 0;
-}
-.intro-explain {
   margin-bottom: var(--spacing-uxl);
 }
 /* 링크 버튼 스타일 */
@@ -179,43 +177,48 @@
 .feed-cover:hover {
   opacity: 0.8;
 }
+
 /* 아티스트 */
-.artist-title {
-  margin-bottom: 0;
-}
-.artist-explain {
-  margin-bottom: var(--spacing-uxl);
-}
-.artist-grid {
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   margin: var(--spacing-uxl) 0;
-  display: grid;
-  grid-template: auto / repeat(4, 1fr);
-  gap: var(--spacing-s);
+}
+.artiest-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.artist-items {
+  display: flex;
+  width: calc(300px * 24);
+  height: 100%;
+  gap: var(--spacing-sm);
 }
 .artist-cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  overflow: hidden;
+  aspect-ratio: 1/1;
+  max-width: 300px;
+  max-height: 300px;
+  -webkit-animation: translateinfinite 50s linear infinite;
+  animation: translateinfinite 50s linear infinite;
   cursor: pointer;
 }
 .artist-img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .artist-fig {
   position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  order: -1;
   text-align: center;
   text-shadow: 5px 5px 30px var(--primary-color);
-  white-space: nowrap;
   transition: opacity, 500ms;
   opacity: 0;
 }
@@ -229,8 +232,19 @@
 .en-name {
   font-size: var(--text-xs);
 }
-.artist-cover:hover .artist-fig {
+.artist-cover:hover .artist-fig, .artist-cover:focus .artist-fig {
   opacity: 1;
+}
+
+@-webkit-keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-300px * 12));
+  }
+}
+@keyframes translateinfinite {
+  100% {
+    transform: translateX(calc(-300px * 12));
+  }
 }
 
 /* 태블릿 */
