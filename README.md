@@ -10,6 +10,8 @@ mobile ver. <br><br><br>
 
 데모 >> https://qorbaxk.github.io/antenna/
 
+(참고한 진짜 안테나 홈페이지 https://antenna.co.kr/ )
+
 ***
 ## 사용한 기능
 * 스크린 리더 사용자를 고려하여 마크업 제작 (aria-label, role 부여)
