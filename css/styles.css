@@ -139,6 +139,7 @@
   font-weight: 700;
   font-size: var(--text-sm);
   letter-spacing: -0.125rem;
+  cursor: pointer;
 }
 .btns::after {
   content: "\e800";
