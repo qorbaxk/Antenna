@@ -15,7 +15,7 @@ mobile ver. <br><br><br>
 ***
 ## 사용한 기능
 * 스크린 리더 사용자를 고려하여 마크업 제작 (aria-label, role 부여)
-* flex, float, position, grid  이용한 레이아웃 배치
+* flex, position, grid  이용한 레이아웃 배치
 * transform 을 이용한 이미지 무한루프 애니메이션 제작
 * 디바이스 크기에 따른 반응형 디자인으로 제작
 * vanilla js 를 이용하여 버튼활성화
