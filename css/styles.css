@@ -63,7 +63,10 @@
 .is-active {
   color: var(--primary-color);
 }
-
+/* 햄버거 메뉴 */
+.button--burger {
+  display: none;
+}
 /* 메인콘텐츠 */
 .main {
   max-width: var(--container-width);
@@ -310,11 +313,18 @@
 /* 태블릿 */
 @media (max-width: 768px) {
   .header {
+    margin: auto;
+    padding: 0;
     justify-content: center;
+    position: relative;
   }
-  .logo {
-    width: 30%;
+  .logo-link {
+    text-align: center;
+  }
+  .logo-img {
+    width: 35%;
     height: auto;
+    transform: translateY(5%);
   }
   .navigation {
     display: none;
@@ -322,13 +332,106 @@
   .social-media {
     display: none;
   }
+  /* 태블릿 메뉴 제어 버튼 */
+  .buttonWrapper {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: var(--spacing-base);
+    transform: translateY(-30%);
+  }
+
+  .button--burger {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--white);
+    border: none;
+  }
+
+  .button--burger:focus {
+    outline-offset: 2px;
+  }
+
+  [class*="button--burgerBar"] {
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    background: var(--black);
+    border-radius: var(--spacing-xxs);
+    left: 0;
+    transition: all 200ms;
+    pointer-events: none;
+  }
+
+  .button--burgerBarTop {
+    top: 0;
+  }
+
+  .button--burgerBarMiddle {
+    top: 25%;
+    transform: translateY(-25%);
+  }
+
+  .button--burgerBarBottom {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* 태블릿 메인 영역 */
+  .main {
+    padding: 0;
+  }
+  .t-padding {
+    padding: var(--spacing-base);
+  }
+  .titles {
+    font-size: var(--text-lg);
+  }
+  .titles::after {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 8px;
+    margin-left: 3px;
+  }
+  .explains {
+    font-size: var(--text-xs);
+    padding: 0;
+    margin-bottom: var(--spacing-xl);
+  }
+  .btns {
+    width: 200px;
+    padding: var(--spacing-base);
+    font-size: var(--text-xs);
+  }
   .feed-grid {
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template: auto / repeat(3, 1fr);
+  }
+  /* 태블릿 푸터 영역 */
+  .footer {
+    background: none;
+  }
+  .footer-inner {
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .en-ad,
+  .btt,
+  .copyright {
+    font-size: var(--text-sm);
   }
 }
 /* 모바일 */
 @media (max-width: 425px) {
   .feed-grid {
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template: auto / repeat(2, 1fr);
+  }
+  .footer {
+    padding-top: var(--spacing-xl);
+  }
+  .btt {
+    top: 0;
+    right: 0;
   }
 }
