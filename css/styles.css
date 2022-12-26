@@ -24,13 +24,15 @@
   flex-shrink: 0;
 }
 /* 네비게이션 */
+.menu {
+  flex-grow: 1;
+}
 .navigation {
   font-family: "gilroy";
   font-size: var(--text-base);
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
-  flex-shrink: 0;
   padding-left: var(--spacing-lg);
 }
 .nav-list {
@@ -326,12 +328,7 @@
     height: auto;
     transform: translateY(5%);
   }
-  .navigation {
-    display: none;
-  }
-  .social-media {
-    display: none;
-  }
+
   /* 태블릿 메뉴 제어 버튼 */
   .buttonWrapper {
     overflow: hidden;
@@ -339,6 +336,12 @@
     top: 50%;
     left: var(--spacing-base);
     transform: translateY(-30%);
+    z-index: 1000;
+  }
+  .buttonWrapper.overlay {
+    position: fixed;
+    top: var(--spacing-xl);
+    left: var(--spacing-base);
   }
 
   .button--burger {
@@ -346,7 +349,7 @@
     position: relative;
     width: 2rem;
     height: 2rem;
-    background-color: var(--white);
+    background-color: transparent;
     border: none;
   }
 
@@ -378,6 +381,70 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .button--burger.close .button--burgerBarMiddle {
+    transform: translate(-100%, -25%);
+  }
+
+  .button--burger.close .button--burgerBarTop {
+    top: 25%;
+    transform: translateY(-25%) rotate(45deg);
+  }
+
+  .button--burger.close .button--burgerBarBottom {
+    top: 25%;
+    transform: translateY(-25%) rotate(-45deg);
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: var(--spacing-uxl);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  .navigation {
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 100;
+  }
+  .news-videoContainer iframe {
+    z-index: -1;
+  }
+  .nav-list {
+    display: flex;
+    flex-flow: column;
+  }
+  .nav-link {
+    display: block;
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-xl);
+    text-decoration: none;
+  }
+  .social-media {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 28.125rem;
+    left: var(--spacing-base);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+  .social-media.overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
   /* 태블릿 메인 영역 */
   .main {
     padding: 0;

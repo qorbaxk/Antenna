@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/455429be77.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/slider.js" defer></script>
+    <script src="./js/burgerMenu.js" defer></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -26,15 +26,19 @@
         />
       </a>
       <!-- 네비게이션 -->
-      <ul class="navigation">
-        <li class="nav-list is-active">
-          <a href="/" class="nav-link">HOME</a>
-        </li>
-        <li class="nav-list"><a href="/" class="nav-link">ABOUT</a></li>
-        <li class="nav-list"><a href="/" class="nav-link">ARTIST</a></li>
-        <li class="nav-list"><a href="/" class="nav-link">SCHEDULE</a></li>
-        <li class="nav-list"><a href="/" class="nav-link">CONTACT</a></li>
-      </ul>
+      <nav class="menu">
+        <h2 class="sr-only">메인 메뉴</h2>
+        <div>
+        <ul class="navigation">
+          <li class="nav-list is-active">
+            <a href="/" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-list"><a href="/" class="nav-link">ABOUT</a></li>
+          <li class="nav-list"><a href="/" class="nav-link">ARTIST</a></li>
+          <li class="nav-list"><a href="/" class="nav-link">SCHEDULE</a></li>
+          <li class="nav-list"><a href="/" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
       <!-- 햄버거 메뉴 -->
       <div class="buttonWrapper">
         <button class="button--none button--burger" aria-label="메뉴 열기">
@@ -43,41 +47,41 @@
           <span class="button--burgerBarBottom"></span>
         </button>
       </div>
-      <!-- 소셜미디어 링크 -->
-      <ul class="social-media">
-        <li>
-          <a
-            class="icons icon-instagram"
-            href="https://www.instagram.com/antenna_official/"
-            target="_blank"
-            aria-label="안테나 인스타그램"
-          ></a>
-        </li>
-        <li>
-          <a
-            class="icons icon-youtube-play"
-            href="https://www.youtube.com/channel/UCwW6D9G9hegNPKYrQ0zivvQ"
-            target="_blank"
-            aria-label="안테나 유튜브 채널"
-          ></a>
-        </li>
-        <li>
-          <a
-            class="icons icon-twitter"
-            href="https://twitter.com/antennamusic"
-            target="_blank"
-            aria-label="안테나 트위터"
-          ></a>
-        </li>
-        <li>
-          <a
-            class="icons icon-facebook"
-            href="https://www.facebook.com/antennamusics"
-            target="_blank"
-            aria-label="안테나 페이스북"
-          ></a>
-        </li>
-      </ul>
+         <!-- 소셜미디어 링크 -->
+         <ul class="social-media">
+          <li>
+            <a
+              class="icons icon-instagram"
+              href="https://www.instagram.com/antenna_official/"
+              target="_blank"
+              aria-label="안테나 인스타그램"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="icons icon-youtube-play"
+              href="https://www.youtube.com/channel/UCwW6D9G9hegNPKYrQ0zivvQ"
+              target="_blank"
+              aria-label="안테나 유튜브 채널"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="icons icon-twitter"
+              href="https://twitter.com/antennamusic"
+              target="_blank"
+              aria-label="안테나 트위터"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="icons icon-facebook"
+              href="https://www.facebook.com/antennamusics"
+              target="_blank"
+              aria-label="안테나 페이스북"
+            ></a>
+          </li>
+        </ul>
     </header>
     <!-- 메인 영역 -->
     <main class="main">
@@ -88,7 +92,7 @@
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/APYhSUUdayQ?autoplay=1&mute=1&controls=0&loop=1"
+            src="https://www.youtube.com/embed/APYhSUUdayQ?autoplay=1&mute=1&controls=0&loop=1&wmode=opaque"
             title="권진아 진심이었던 사람만 바보가 돼 뮤직 비디오"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
