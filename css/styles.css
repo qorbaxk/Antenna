@@ -119,6 +119,7 @@
 .intro-title {
   margin-bottom: var(--spacing-md);
 }
+
 .explains {
   font-weight: 600;
   opacity: 0.4;
@@ -500,5 +501,11 @@
   .btt {
     top: 0;
     right: 0;
+  }
+}
+/* 데스크탑 */
+@media (min-width: 1024px) {
+  .intro-title span {
+    display: inline-block;
   }
 }
