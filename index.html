@@ -17,8 +17,8 @@
     <!-- 헤더 -->
     <header class="header">
       <!-- 로고 -->
+      <h1 class="sr-only">안테나</h1>
       <a href="/" class="logo-link">
-        <h1 class="sr-only">안테나</h1>
         <img
           src="./img/logo.png"
           alt="안테나 로고"
@@ -41,7 +41,11 @@
       </nav>
       <!-- 햄버거 메뉴 -->
       <div class="buttonWrapper">
-        <button class="button--none button--burger" aria-label="메뉴 열기">
+        <button
+          class="button--none button--burger"
+          aria-label="메뉴 열기"
+          type="button"
+        >
           <span class="button--burgerBarTop"></span>
           <span class="button--burgerBarMiddle"></span>
           <span class="button--burgerBarBottom"></span>
@@ -54,6 +58,7 @@
             class="icons icon-instagram"
             href="https://www.instagram.com/antenna_official/"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="안테나 인스타그램"
           ></a>
         </li>
@@ -62,6 +67,7 @@
             class="icons icon-youtube-play"
             href="https://www.youtube.com/channel/UCwW6D9G9hegNPKYrQ0zivvQ"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="안테나 유튜브 채널"
           ></a>
         </li>
@@ -70,6 +76,7 @@
             class="icons icon-twitter"
             href="https://twitter.com/antennamusic"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="안테나 트위터"
           ></a>
         </li>
@@ -78,6 +85,7 @@
             class="icons icon-facebook"
             href="https://www.facebook.com/antennamusics"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="안테나 페이스북"
           ></a>
         </li>
@@ -101,12 +109,13 @@
       </section>
       <!-- 소개 -->
       <section class="intro sections t-padding">
-        <h2 class="intro-title titles">
-          <span>
-            Together, we challenge ourselves without any limit and desire to
-          </span>
-          <span> deliver our shared values to the industry as a whole.</span>
-        </h2>
+        <h2 class="sr-only">Antenna Goal</h2>
+        <span class="intro-title titles">
+          Together, we challenge ourselves without any limit and desire to
+        </span>
+        <span class="intro-title titles">
+          deliver our shared values to the industry as a whole.</span
+        >
         <p class="intro-explain explains">
           좋은 사람들과 함께 틀에 얽매이지 않고 자유롭게 도전하여 엔터테인먼트
           산업 전반에 우리가 가진 가치를 전합니다.
@@ -118,12 +127,8 @@
         <h2 class="feed-title titles">Antenna Feed</h2>
         <div class="feed-grid">
           <figure class="feed-cover">
-            <img
-              src="./img/tub10.jpg"
-              alt="페퍼톤스 콘서트 현장 사진"
-              class="feed-img"
-            />
-            <figcaption class="sr-only">페퍼톤스 콘서트 현장 사진</figcaption>
+            <img src="./img/tub10.jpg" alt="페퍼톤스 콘서트" class="feed-img" />
+            <figcaption class="sr-only">페퍼톤스 콘서트</figcaption>
           </figure>
           <figure class="feed-cover">
             <img
@@ -216,233 +221,297 @@
         <div class="artist-btn btns" role="button">아티스트 전체보기</div>
         <div class="slider">
           <div class="artiest-wrapper">
-            <div class="artist-items">
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/yhy.jpg" alt="유희열" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">유희열</p>
-                  <p class="en-name">You Hee Yul</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/yjs.png" alt="유재석" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">유재석</p>
-                  <p class="en-name">Yu Jae Seok</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/jjh.jpg" alt="정재형" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">정재형</p>
-                  <p class="en-name">Jung Jae Hyung</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/rcdp.png" alt="루시드폴" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">루시드폴</p>
-                  <p class="en-name">Lucid Fall</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/lss.png" alt="이상순" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">이상순</p>
-                  <p class="en-name">Lee Sang Soon</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/pptz.jpg" alt="페퍼톤스" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">페퍼톤스</p>
-                  <p class="en-name">PEPPERTONES</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/bsb.png" alt="박새별" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">박새별</p>
-                  <p class="en-name">Park Sae Byul</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/sk.jpg" alt="샘김" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">샘김</p>
-                  <p class="en-name">Sam Kim</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/lja.jpg" alt="이진아" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">이진아</p>
-                  <p class="en-name">Lee Jin Ah</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/kja.jpg" alt="권진아" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">권진아</p>
-                  <p class="en-name">Kwon Jin Ah</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/jsw.png" alt="정승환" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">정승환</p>
-                  <p class="en-name">Jung Seung Hwan</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/ysc.jpg" alt="윤석철" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">윤석철</p>
-                  <p class="en-name">Yun Seok Cheol</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/jj.jpg" alt="적재" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">적재</p>
-                  <p class="en-name">Jukjae</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/lmj.jpg" alt="이미주" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">이미주</p>
-                  <p class="en-name">Lee Mi Joo</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/sdw.jpg" alt="서동환" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">서동환</p>
-                  <p class="en-name">Seo Dong Hwan</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/hhj.jpg" alt="황현조" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">황현조</p>
-                  <p class="en-name">Hwang Hyeon Jo</p>
-                </figcaption>
-              </figure>
+            <ul class="artist-items">
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/yhy.jpg" alt="유희열" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">유희열</p>
+                    <p class="en-name">You Hee Yul</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/yjs.png" alt="유재석" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">유재석</p>
+                    <p class="en-name">Yu Jae Seok</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/jjh.jpg" alt="정재형" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">정재형</p>
+                    <p class="en-name">Jung Jae Hyung</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/rcdp.png" alt="루시드폴" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">루시드폴</p>
+                    <p class="en-name">Lucid Fall</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/lss.png" alt="이상순" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">이상순</p>
+                    <p class="en-name">Lee Sang Soon</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/pptz.jpg" alt="페퍼톤스" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">페퍼톤스</p>
+                    <p class="en-name">PEPPERTONES</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/bsb.png" alt="박새별" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">박새별</p>
+                    <p class="en-name">Park Sae Byul</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/sk.jpg" alt="샘김" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">샘김</p>
+                    <p class="en-name">Sam Kim</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/lja.jpg" alt="이진아" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">이진아</p>
+                    <p class="en-name">Lee Jin Ah</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/kja.jpg" alt="권진아" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">권진아</p>
+                    <p class="en-name">Kwon Jin Ah</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/jsw.png" alt="정승환" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">정승환</p>
+                    <p class="en-name">Jung Seung Hwan</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/ysc.jpg" alt="윤석철" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">윤석철</p>
+                    <p class="en-name">Yun Seok Cheol</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/jj.jpg" alt="적재" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">적재</p>
+                    <p class="en-name">Jukjae</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/lmj.jpg" alt="이미주" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">이미주</p>
+                    <p class="en-name">Lee Mi Joo</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/sdw.jpg" alt="서동환" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">서동환</p>
+                    <p class="en-name">Seo Dong Hwan</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/hhj.jpg" alt="황현조" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">황현조</p>
+                    <p class="en-name">Hwang Hyeon Jo</p>
+                  </figcaption>
+                </figure>
+              </li>
 
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/yhy.jpg" alt="유희열" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">유희열</p>
-                  <p class="en-name">You Hee Yul</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/yjs.png" alt="유재석" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">유재석</p>
-                  <p class="en-name">Yu Jae Seok</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/jjh.jpg" alt="정재형" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">정재형</p>
-                  <p class="en-name">Jung Jae Hyung</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/rcdp.png" alt="루시드폴" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">루시드폴</p>
-                  <p class="en-name">Lucid Fall</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/lss.png" alt="이상순" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">이상순</p>
-                  <p class="en-name">Lee Sang Soon</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/pptz.jpg" alt="페퍼톤스" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">페퍼톤스</p>
-                  <p class="en-name">PEPPERTONES</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/bsb.png" alt="박새별" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">박새별</p>
-                  <p class="en-name">Park Sae Byul</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/sk.jpg" alt="샘김" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">샘김</p>
-                  <p class="en-name">Sam Kim</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/lja.jpg" alt="이진아" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">이진아</p>
-                  <p class="en-name">Lee Jin Ah</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/kja.jpg" alt="권진아" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">권진아</p>
-                  <p class="en-name">Kwon Jin Ah</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/jsw.png" alt="정승환" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">정승환</p>
-                  <p class="en-name">Jung Seung Hwan</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/ysc.jpg" alt="윤석철" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">윤석철</p>
-                  <p class="en-name">Yun Seok Cheol</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/jj.jpg" alt="적재" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">적재</p>
-                  <p class="en-name">Jukjae</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/lmj.jpg" alt="이미주" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">이미주</p>
-                  <p class="en-name">Lee Mi Joo</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/sdw.jpg" alt="서동환" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">서동환</p>
-                  <p class="en-name">Seo Dong Hwan</p>
-                </figcaption>
-              </figure>
-              <figure class="artist-cover" tabindex="0">
-                <img src="./img/hhj.jpg" alt="황현조" class="artist-img" />
-                <figcaption class="artist-fig">
-                  <p class="ko-name">황현조</p>
-                  <p class="en-name">Hwang Hyeon Jo</p>
-                </figcaption>
-              </figure>
-            </div>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/yhy.jpg" alt="유희열" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">유희열</p>
+                    <p class="en-name">You Hee Yul</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/yjs.png" alt="유재석" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">유재석</p>
+                    <p class="en-name">Yu Jae Seok</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/jjh.jpg" alt="정재형" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">정재형</p>
+                    <p class="en-name">Jung Jae Hyung</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/rcdp.png" alt="루시드폴" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">루시드폴</p>
+                    <p class="en-name">Lucid Fall</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/lss.png" alt="이상순" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">이상순</p>
+                    <p class="en-name">Lee Sang Soon</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/pptz.jpg" alt="페퍼톤스" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">페퍼톤스</p>
+                    <p class="en-name">PEPPERTONES</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/bsb.png" alt="박새별" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">박새별</p>
+                    <p class="en-name">Park Sae Byul</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/sk.jpg" alt="샘김" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">샘김</p>
+                    <p class="en-name">Sam Kim</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/lja.jpg" alt="이진아" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">이진아</p>
+                    <p class="en-name">Lee Jin Ah</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/kja.jpg" alt="권진아" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">권진아</p>
+                    <p class="en-name">Kwon Jin Ah</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/jsw.png" alt="정승환" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">정승환</p>
+                    <p class="en-name">Jung Seung Hwan</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/ysc.jpg" alt="윤석철" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">윤석철</p>
+                    <p class="en-name">Yun Seok Cheol</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/jj.jpg" alt="적재" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">적재</p>
+                    <p class="en-name">Jukjae</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/lmj.jpg" alt="이미주" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">이미주</p>
+                    <p class="en-name">Lee Mi Joo</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/sdw.jpg" alt="서동환" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">서동환</p>
+                    <p class="en-name">Seo Dong Hwan</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="artist-cover" tabindex="0">
+                  <img src="./img/hhj.jpg" alt="황현조" class="artist-img" />
+                  <figcaption class="artist-fig">
+                    <p class="ko-name">황현조</p>
+                    <p class="en-name">Hwang Hyeon Jo</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -460,7 +529,7 @@
         <div class="footer-btn btns" role="button">제휴/협업 문의</div>
       </div>
       <small class="copyright"> &copy; Antenna 2022 All rights reserved </small>
-      <div class="btt">Back to the top</div>
+      <div class="btt" role="button">Back to the top</div>
       <div class="portfolio">
         본사이트는 상업적인 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다.
         홈페이지의 일부 내용과 이미지 등은 출처가 따로 있음을 밝힙니다.
